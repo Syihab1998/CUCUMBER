@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="55.143546">
+    <testcase classname="user" name="User successfully punch in &amp; punch out" time="55.143546">
+        <system-out><![CDATA[Given 8User on homepage with authorization using "Admin" as username & "s3Kol4HQA!*" as password.passed
+When User click time button & click attendance button & click punch in button.passed
+And User input "on time" as punchInNote & click punch in button.............passed
+Then User succesfully punch in..............................................passed
+Then User input "return" as punchOutNote & click punch out button...........passed
+Then User succesfully punch out.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

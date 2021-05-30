@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: User  successfully assign leave and verify leave on the list
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.938 s - in Scenario: User  successfully assign leave and verify leave on the list

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: search employee
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.73 s - in Scenario: search employee

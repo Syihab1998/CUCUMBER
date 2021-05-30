@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: User register OAuth client
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 27.381 s - in Scenario: User register OAuth client

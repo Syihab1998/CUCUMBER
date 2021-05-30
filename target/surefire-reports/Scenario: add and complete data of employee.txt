@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: add and complete data of employee
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.842 s <<< FAILURE! - in Scenario: add and complete data of employee
+Scenario: add and complete data of employee.And input "988228225" as SIMNumb & click genderChckBox & select nationality & input "327222102130000" as otherID & input "2024-05-21" as SIMExpDate & select marital status & input "1999-05-21" as BirthDate & click save btn  Time elapsed: 0.006 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#personal_txtLicenNo"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Muhammads-MacBook-Pro.local', ip: 'fe80:0:0:0:c54:a3d6:c376:64ca%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/g_/94h63hbj2mv...}, goog:chromeOptions: {debuggerAddress: localhost:59695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58af9a0ee50a068159ecd4cffb5215db
+*** Element info: {Using=id, value=personal_txtLicenNo}
+

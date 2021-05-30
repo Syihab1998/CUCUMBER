@@ -1,0 +1,542 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3241262268,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Add new user data",
+        "description": "",
+        "id": "search-add-and-delete-data-on-admin-page;add-new-user-data",
+        "after": [
+          {
+            "result": {
+              "duration": 111301371,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4453373071,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User 1 on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 45
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 67
+                }
+              ],
+              "location": "AdminStep.VisitLoginPage2(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8673426085,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User 1 click Admin button and click add button to go to add user page",
+            "match": {
+              "location": "AdminStep.goToAdminPageToAddUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15481031455,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User select Admin as role \u0026 input \"kim jong un\" as employeeUserName \u0026 input \"syihabcuy\" as userName \u0026 input \"s3Kol4HQA!*\" as userPassword \u0026 input \"s3Kol4HQA!*\" as userRePass \u0026 click save button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kim jong un",
+                  "offset": 35
+                },
+                {
+                  "val": "syihabcuy",
+                  "offset": 77
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 109
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 147
+                }
+              ],
+              "location": "AdminStep.inputCredentialToAddUser(String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5029915757,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User succesfully add new user data",
+            "match": {
+              "location": "AdminStep.userSuccessfullAddNewUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@AddData"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2087968406,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User verify user data entered exist",
+        "description": "",
+        "id": "search-add-and-delete-data-on-admin-page;user-verify-user-data-entered-exist",
+        "after": [
+          {
+            "result": {
+              "duration": 105086785,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4274178553,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User 2 on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 45
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 67
+                }
+              ],
+              "location": "AdminStep.VisitLoginPage3(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5402695258,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User 2 click Admin button",
+            "match": {
+              "location": "AdminStep.goToAdminPageSearchToUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5368748584,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User input \"syihab\" as userName \u0026 click search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "syihab",
+                  "offset": 12
+                }
+              ],
+              "location": "AdminStep.inputCredentialToSearchUser(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28942689,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User get user data on the list",
+            "match": {
+              "location": "AdminStep.GetUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@SearchData"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2021533655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User looking for random data",
+        "description": "",
+        "id": "search-add-and-delete-data-on-admin-page;user-looking-for-random-data",
+        "after": [
+          {
+            "result": {
+              "duration": 142204830,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4216202503,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User 3 on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 45
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 67
+                }
+              ],
+              "location": "AdminStep.VisitLoginPage4(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5401135233,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Users 3 click Admin button",
+            "match": {
+              "location": "AdminStep.goToAdminPageSearchToXUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5374753075,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User input \"cihui\" as xUserNamee \u0026 click search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cihui",
+                  "offset": 12
+                }
+              ],
+              "location": "AdminStep.inputCredentialToSearchXUser(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24919474,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User get notFoundMessage on the list",
+            "match": {
+              "location": "AdminStep.xGetUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@SearchRandomData"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1870276234,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User register OAuth client",
+        "description": "",
+        "id": "search-add-and-delete-data-on-admin-page;user-register-oauth-client",
+        "after": [
+          {
+            "result": {
+              "duration": 103358141,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4266765184,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User 4 on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 45
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 67
+                }
+              ],
+              "location": "AdminStep.VisitLoginPage5(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8801517338,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User 4 click Admin button \u0026 click configuration button \u0026 click register OAuth client button",
+            "match": {
+              "location": "AdminStep.userGoToRegOAuthClient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5390253516,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User input \"syihabbb\" as oAuthId \u0026 input \"syihab12\" as oAuthSecret \u0026 input \"[ https://orangehrm.github.io/orangehrm-api-doc ].\" as oAuthUrl \u0026 click button save",
+            "match": {
+              "arguments": [
+                {
+                  "val": "syihabbb",
+                  "offset": 12
+                },
+                {
+                  "val": "syihab12",
+                  "offset": 42
+                },
+                {
+                  "val": "[ https://orangehrm.github.io/orangehrm-api-doc ].",
+                  "offset": 76
+                }
+              ],
+              "location": "AdminStep.inputCredentialToRegOAuthClient(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26892953,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User successfully register OAuth client",
+            "match": {
+              "location": "AdminStep.successfullyRegisterOAuthClient()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@regOAuthClient"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1801302367,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "User delete OAuth client data",
+        "description": "",
+        "id": "search-add-and-delete-data-on-admin-page;user-delete-oauth-client-data",
+        "after": [
+          {
+            "result": {
+              "duration": 105422302,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3934408021,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User 5 on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 45
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 67
+                }
+              ],
+              "location": "AdminStep.VisitLoginPage6(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15755432461,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User 5 click Admin button \u0026 click configuration button \u0026 click register OAuth client button",
+            "match": {
+              "location": "AdminStep.goToConfigAdminPageToDeleteOAuthClient()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10426236726,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User click one of data to be delete \u0026 click ok button",
+            "match": {
+              "location": "AdminStep.selectOAuthClientToBeDelete()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25625682,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User successfully delete OAuth client data",
+            "match": {
+              "location": "AdminStep.successfullyDeleteOAuthClient()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@deleteOAuthClient"
+          }
+        ]
+      }
+    ],
+    "name": "Search add and delete data on Admin Page",
+    "description": "",
+    "id": "search-add-and-delete-data-on-admin-page",
+    "keyword": "Feature",
+    "uri": "features/adminPage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Admin"
+      }
+    ]
+  }
+]

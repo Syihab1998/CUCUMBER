@@ -1,0 +1,150 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29111228101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User successfully punch in \u0026 punch out",
+        "description": "",
+        "id": "user;user-successfully-punch-in-\u0026-punch-out",
+        "after": [
+          {
+            "result": {
+              "duration": 1073340900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9015140200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "8User on homepage with authorization using \"Admin\" as username \u0026 \"s3Kol4HQA!*\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 44
+                },
+                {
+                  "val": "s3Kol4HQA!*",
+                  "offset": 66
+                }
+              ],
+              "location": "timeStep.VisitLoginPage8(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7351114400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click time button \u0026 click attendance button \u0026 click punch in button",
+            "match": {
+              "location": "timeStep.goToTimePunchInPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4252043000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User input \"on time\" as punchInNote \u0026 click punch in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "on time",
+                  "offset": 12
+                }
+              ],
+              "location": "timeStep.inputNotesToPunchIn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39943401,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User succesfully punch in",
+            "match": {
+              "location": "timeStep.successfulPunchIn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4290092600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User input \"return\" as punchOutNote \u0026 click punch out button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "return",
+                  "offset": 12
+                }
+              ],
+              "location": "timeStep.clickPunchOut(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10643099,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User succesfully punch out",
+            "match": {
+              "location": "timeStep.successfulPunchOut()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@puncInOut"
+          }
+        ]
+      }
+    ],
+    "name": "user",
+    "description": "",
+    "id": "user",
+    "keyword": "Feature",
+    "uri": "features/timePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Time"
+      }
+    ]
+  }
+]

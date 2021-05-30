@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: User looking for random data
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.938 s - in Scenario: User looking for random data

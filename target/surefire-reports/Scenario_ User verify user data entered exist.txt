@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: User verify user data entered exist
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 97.809 s - in Scenario: User verify user data entered exist
